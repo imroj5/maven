@@ -1,8 +1,11 @@
 package org.example.notification;
 
-public class Emailservice implements NotificationService  {
+import org.springframework.stereotype.Component;
 
-    @Override
+@Component
+public class Emailservice  {
+
+
     public void sendNotification(){
         System.out.println("email is sent to the customer");
     }

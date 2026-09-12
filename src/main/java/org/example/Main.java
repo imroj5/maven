@@ -1,17 +1,18 @@
 package org.example;
 
 import org.example.notification.Emailservice;
-import org.example.notification.NotificationService;
-import org.example.notification.PopupService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
 
-        NotificationService notification = new PopupService();
-   orderservice delivery = new orderservice(notification);
-   delivery.placeOrder();
+
+  public  static void main(String[] args) {
+
+      ApplicationContext contexts = new AnnotationConfigApplicationContext(AppConfig.class);
+
+      orderS orde= contexts.getBean(orderS.class);
+      orde.oredertaken();
 
         }
 
