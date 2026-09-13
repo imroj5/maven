@@ -13,7 +13,8 @@ public class Main {
 
       orderS orde= contexts.getBean(orderS.class);
       orde.oredertaken();
-
+    //  upiPayment paisa=contexts.getBean(upiPayment.class);
+      //paisa.upipay();
         }
 
 }
